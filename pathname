@@ -1,0 +1,12 @@
+A. Current directory in development
+/opt/softwareag97/IntegrationServer/instances/default/packages
+
+B. Commands
+
+1. svn list --username dmai  https://labcase.softwareag.com/svn/jnj_tracebility/source/trunk/IS/IMDG/
+
+2. svn import --username dmai CG510_IMDG_Common/ https://labcase.softwareag.com/svn/jnj_tracebility/source/trunk/IS/IMDG/CG510_IMDG_Common -m"Adding IS Package into IMDG"
+
+3. svn mkdir --username dmai --parents -m"Creating test folder to check SVN command" https://labcase.softwareag.com/svn/jnj_tracebility/source/trunk/IS/IMDG/CG510_IMDG_Common
+
+4.  svn delete -m "Deleting package as need to import from fresh source code" --username dmai https://labcase.softwareag.com/svn/jnj_tracebility/source/trunk/IS/IMDG/CG510_IMDG_Common
